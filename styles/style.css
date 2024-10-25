@@ -85,7 +85,7 @@ html {
   --background-color-about: #171717;
   --background-color-footer: #171717;
   --alt-background-color: #000000;
-  --background-color-holding-page: rgba(82, 0, 255, 0.6);
+  --background-color-holding-page: #fcf463;
   --h1-color: #ffffff;
   --h2-color: #a9d8b9;
   --h3-color: #a9d8b9;
@@ -95,17 +95,17 @@ html {
   --primary-text-color: #ffffff;
   --holding-page-title-color: #ebedf0;
   --accent-color: #a9d8b9;
-  --overlay-color: #a9d8b9;
-  --overlay-title-color: #171717;
+  --overlay-color: #171717;
+  --overlay-title-color: white;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #a9d8b9;
+  --hyperlink-color: white;
   --hyperlink-alternate-color: orangered;
   --hover-color: #ff057c;
   --visited-color: #a9d8b9;
-  --project-title-color: #a9d8b9;
-  --project-sidebar-background-color: orangered;
-  --project-sidebar-text-color: white;
-  --heart-color: darkred;
+  --project-title-color: white;
+  --project-sidebar-background-color: #171717;
+  --project-sidebar-text-color: #a9d8b9;
+  --heart-color: #ff057c;
   --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #a9d8b9;
   --linear-gradient-color-1: #ff057c;
@@ -274,6 +274,7 @@ a:active {
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center center;
+  color: #ff057c;
 }
 
 .heart {
@@ -390,6 +391,7 @@ a:active {
 .portfolio,
 .project-wrapper {
   padding: 0.25rem;
+  background-color: #171717;
 }
 
 /* Defining the work page grid */
