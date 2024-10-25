@@ -10,10 +10,8 @@
 
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
 
-@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap");
 
 /*
 
@@ -80,36 +78,36 @@ html {
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Inter", sans-serif;
-  --heading-typeface: "Eczar", serif;
-  --project-title-typeface: "Eczar", serif;
+  --body-typeface: "Sometype Mono", serif;
+  --heading-typeface: "Plus Jakarta Sans", sans-serif;
+  --project-title-typeface: "Plus Jakarta Sans", sans-serif;
   --background-color: #fdfdfd;
   --background-color-about: #f5f5f5;
-  --background-color-footer: #f5f5f5;
+  --background-color-footer: #171717;
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
-  --primary-text-color: #222;
+  --h1-color: #ffffff;
+  --h2-color: #a9d8b9;
+  --h3-color: #a9d8b9;
+  --h4-color: #a9d8b9;
+  --h5-color: #a9d8b9;
+  --h6-color: #a9d8b9;
+  --primary-text-color: #ffffff;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #5200ff;
-  --overlay-color: #5200ff;
-  --overlay-title-color: #ffffff;
+  --accent-color: #a9d8b9;
+  --overlay-color: #a9d8b9;
+  --overlay-title-color: #171717;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #5200ff;
+  --hyperlink-color: #a9d8b9;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --visited-color: #5200ff;
-  --project-title-color: #5200ff;
+  --visited-color: #a9d8b9;
+  --project-title-color: #a9d8b9;
   --project-sidebar-background-color: orangered;
   --project-sidebar-text-color: white;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5200ff;
+  --text-selection-background-color: #a9d8b9;
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
@@ -330,7 +328,7 @@ a:active {
 }
 
 .logo {
-  width: 3rem;
+  width: 5rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -338,10 +336,10 @@ a:active {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: center;
+  align-items: flex;
   justify-content: center;
   padding: 2rem 4rem;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-icon {
@@ -606,7 +604,12 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)), url(/assets/temp/noise.svg);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      var(--background-color-holding-page)
+    ),
+    url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
