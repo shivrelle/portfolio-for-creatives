@@ -82,7 +82,7 @@ html {
   --heading-typeface: "Plus Jakarta Sans", sans-serif;
   --project-title-typeface: "Plus Jakarta Sans", sans-serif;
   --background-color: #fdfdfd;
-  --background-color-about: #f5f5f5;
+  --background-color-about: #171717;
   --background-color-footer: #171717;
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
@@ -325,6 +325,7 @@ a:active {
   justify-content: space-between;
   padding: 1rem;
   align-items: flex-start;
+  background-color: #171717;
 }
 
 .logo {
