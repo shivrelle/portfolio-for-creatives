@@ -100,7 +100,7 @@ html {
   --overlay-description-color: #ffffff;
   --hyperlink-color: #a9d8b9;
   --hyperlink-alternate-color: orangered;
-  --hover-color: #111;
+  --hover-color: #ff057c;
   --visited-color: #a9d8b9;
   --project-title-color: #a9d8b9;
   --project-sidebar-background-color: orangered;
@@ -201,6 +201,7 @@ em {
 
 .fineprint {
   font-size: 0.875rem;
+  color: #a9d8b9;
 }
 
 .hero-headline {
