@@ -332,6 +332,16 @@ a:active {
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
+.wordmark {
+  fill: #a9d8b9;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.wordmark:hover {
+  fill: #fa007e;
+}
+
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
