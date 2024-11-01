@@ -28,7 +28,6 @@ Imported stylesheets. Remove the ones you do not want to use.
 /* TODO: Delete any stylesheets that you do not want to use. */
 
 @import url("make-something-fly.css");
-@import url("animated-gradient.css");
 @import url("text-stroke.css");
 @import url("stroke-shadow.css");
 @import url("experiments.css");
@@ -81,33 +80,33 @@ html {
   --body-typeface: "Sometype Mono", serif;
   --heading-typeface: "Plus Jakarta Sans", sans-serif;
   --project-title-typeface: "Plus Jakarta Sans", sans-serif;
-  --background-color: #fdfdfd;
-  --background-color-about: #171717;
-  --background-color-footer: #171717;
-  --alt-background-color: #000000;
+  --background-color: #ffffff;
+  --background-color-about: #ffffff;
+  --background-color-footer: #ffffff;
+  --alt-background-color: #ffffff;
   --background-color-holding-page: #fcf463;
-  --h1-color: #ffffff;
-  --h2-color: #a9d8b9;
-  --h3-color: #a9d8b9;
-  --h4-color: #a9d8b9;
-  --h5-color: #a9d8b9;
-  --h6-color: #a9d8b9;
-  --primary-text-color: #ffffff;
-  --holding-page-title-color: #ebedf0;
+  --h1-color: #171717;
+  --h2-color: #171717;
+  --h3-color: #171717;
+  --h4-color: #171717;
+  --h5-color: #171717;
+  --h6-color: #171717;
+  --primary-text-color: #171717;
+  --holding-page-title-color: #ffffff;
   --accent-color: #a9d8b9;
   --overlay-color: #171717;
   --overlay-title-color: #a9d8b9;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: white;
+  --hyperlink-color: #171717;
   --hyperlink-alternate-color: orangered;
   --hover-color: #ff057c;
-  --visited-color: #a9d8b9;
-  --project-title-color: white;
-  --project-sidebar-background-color: #171717;
-  --project-sidebar-text-color: #a9d8b9;
+  --visited-color: #171717;
+  --project-title-color: #171717;
+  --project-sidebar-background-color: #ffffff;
+  --project-sidebar-text-color: #171717;
   --heart-color: #ff057c;
-  --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #a9d8b9;
+  --holding-page-footer-color: #ffffff;
+  --text-selection-background-color: #ff057c;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -198,7 +197,7 @@ em {
 
 .fineprint {
   font-size: 0.875rem;
-  color: #a9d8b9;
+  color: #171717;
 }
 
 .hero-headline {
@@ -316,6 +315,7 @@ a:active {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 .branding-navigation {
@@ -324,7 +324,7 @@ a:active {
   justify-content: space-between;
   padding: 1rem;
   align-items: flex-start;
-  background-color: #171717;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -333,7 +333,7 @@ a:active {
 }
 
 .wordmark {
-  fill: #a9d8b9;
+  fill: #171717;
   transition: 200ms;
   transition-timing-function: ease-in-out;
 }
@@ -388,7 +388,7 @@ a:active {
 .portfolio,
 .project-wrapper {
   padding: 0.25rem;
-  background-color: #171717;
+  background-color: #ffffff;
 }
 
 /* Defining the work page grid */
@@ -614,14 +614,6 @@ a:active {
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1),
-      var(--background-color-holding-page)
-    ),
-    url(/assets/temp/noise.svg);
-  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
 .holding-page-animation {
