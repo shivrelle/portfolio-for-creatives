@@ -147,7 +147,7 @@ svg {
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: var(--heading-typeface);
 
   color: var(--h1-color);
