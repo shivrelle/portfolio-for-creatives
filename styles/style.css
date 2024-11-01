@@ -108,9 +108,6 @@ html {
   --heart-color: #ff057c;
   --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #a9d8b9;
-  --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -209,7 +206,7 @@ em {
 }
 
 .project-title {
-  font-size: 3.725rem;
+  font-size: 3rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
@@ -300,7 +297,7 @@ a:active {
 }
 
 .project-description {
-  font-size: 1.225rem;
+  font-size: 1rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
