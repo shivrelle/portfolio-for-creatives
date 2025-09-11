@@ -10,8 +10,11 @@
 
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
 
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+/* Host Grotesk Font (for headers or special text) */
+@import url("@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap')");
+
+/* Texturina Font (for small headers and paragraph) */
+@import url("https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap");
 
 /*
 
@@ -77,20 +80,20 @@ html {
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Sometype Mono", serif;
-  --heading-typeface: "Plus Jakarta Sans", sans-serif;
-  --project-title-typeface: "Plus Jakarta Sans", sans-serif;
-  --background-color: #ffffff;
-  --background-color-about: #ffffff;
-  --background-color-footer: #ffffff;
+  --body-typeface: "Texturina", serif;
+  --heading-typeface: "Host Grotesk", sans-serif;
+  --project-title-typeface: "Host Grotesk", sans-serif;
+  --background-color: #e9d2ce;
+  --background-color-about: #e9d2ce;
+  --background-color-footer: #e9d2ce;
   --alt-background-color: #ffffff;
   --background-color-holding-page: #fcf463;
-  --h1-color: #171717;
-  --h2-color: #171717;
-  --h3-color: #171717;
-  --h4-color: #171717;
-  --h5-color: #171717;
-  --h6-color: #171717;
+  --h1-color: #131313;
+  --h2-color: #131313;
+  --h3-color: #131313;
+  --h4-color: #131313;
+  --h5-color: #131313;
+  --h6-color: #131313;
   --primary-text-color: #171717;
   --holding-page-title-color: #ffffff;
   --accent-color: #a9d8b9;
@@ -147,52 +150,70 @@ svg {
 */
 
 h1 {
-  font-size: 4rem;
   font-family: var(--heading-typeface);
-  font-weight: 800;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.2625rem; /* 113.667% */
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
   color: var(--h1-color);
 }
 
 h2 {
-  font-size: 2.25rem;
   font-family: var(--heading-typeface);
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-style: normal;
   font-weight: 700;
+  line-height: 115%; /* 2.875rem */
+  text-transform: uppercase;
   color: var(--h2-color);
 }
 
 h3 {
-  font-size: 4rem;
   font-family: var(--heading-typeface);
-  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  font-style: normal;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 120%; /* 2.25rem */
+  text-transform: uppercase;
   color: var(--h3-color);
 }
 
 h4 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-family: var(--heading-typeface);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6875rem; /* 112.5% */
+  text-transform: uppercase;
   color: var(--h4-color);
 }
 
 h5 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-family: var(--body-typeface);
+  font-family: Texturina;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 1.575rem */
   color: var(--h5-color);
 }
 
 h6 {
+  font-family: var(--body-typeface);
   font-size: 1rem;
-  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 1.3rem */
   color: var(--h6-color);
 }
 
 p {
   font-size: 1rem;
-  line-height: 1.25rem;
-  margin-bottom: 1rem;
-  max-width: 50ch;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 em {
@@ -317,7 +338,7 @@ a:active {
   margin-bottom: 1rem;
 }
 
-/* Hero 
+/*
 
 ██   ██ ███████ ██████   ██████  
 ██   ██ ██      ██   ██ ██    ██ 
@@ -334,24 +355,37 @@ a:active {
   background-color: #ffffff;
 }
 
-hero-header {
-  margin-bottom: 2rem;
+.hero-header {
+  /*margin-bottom: 2rem;*/
+  /*padding: 1.5rem;
+  display: flex;*/
+  background: rgba(255, 255, 0, 0.754);
+  height: 9rem;
+  align-items: center;
+  justify-content: center;
 }
+
+.index-logo {
+  background-color: greenyellow;
+}
+
 .branding-navigation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-  gap: 2rem;
-  align-items: center;
-  background-color: #ffffff;
+  justify-content: center;
+  /*padding: 1rem;*/
+  gap: 15rem;
+  align-items: flex-start;
+  /*background-color: #ffffff;*/
 }
 
 .header-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: flex-end;
+  padding: 1.5rem 5.3125rem;
+  align-items: center;
+  background-color: pink;
 }
 .logo {
   width: 5rem;
@@ -369,13 +403,15 @@ hero-header {
 }
 
 .hero-headline-wrapper {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   width: 100%;
+  height: 80vh;*/
+  background-color: rgba(0, 255, 255, 0.427);
 }
 
 .hero-content {
-  background-color: #ffffff;
+  background-color: #ffc35590;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -385,8 +421,8 @@ hero-header {
 }
 
 .hero-image {
-  width: 50%;
-  justify-content: right;
+  object-fit: cover;
+  background-color: rgba(0, 0, 255, 0.435);
 }
 
 .hero-icon {
@@ -781,7 +817,7 @@ hero-header {
   }
 
   .hero-headline-wrapper {
-    padding: 4rem 4rem;
+    /*padding: 4rem 4rem;*/
   }
 
   .grid {
@@ -939,7 +975,11 @@ hero-header {
   }
 
   .hero-headline-wrapper {
-    padding: 0rem 8rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0, 255, 255, 0.427);
   }
 
   .grid {
