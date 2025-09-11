@@ -816,9 +816,9 @@ a:active {
     padding: 1rem;
   }
 
-  .hero-headline-wrapper {
-    /*padding: 4rem 4rem;*/
-  }
+  /*.hero-headline-wrapper {
+   padding: 4rem 4rem;
+  }*/
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
