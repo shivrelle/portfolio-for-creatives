@@ -383,7 +383,7 @@ a:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1.5rem 5.3125rem;
+  padding: 1.5rem 5.31rem;
   align-items: center;
   background-color: pink;
 }
@@ -442,6 +442,12 @@ a:active {
   justify-content: space-between;
 }
 
+.hero-divider {
+  border: none; /* Remove default border */
+  height: 2px; /* Set the thickness */
+  background-color: #0680f7; /* Set the color */
+  /* Add some spacing above and below */
+}
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -456,18 +462,25 @@ a:active {
   flex: 1;
 }
 
+.work-header {
+  padding: 1.5rem 5.31rem;
+  margin-top: 1.44rem;
+  margin-bottom: 1.44rem;
+  background: red;
+}
+
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: 0.25rem;
-  background-color: #ffffff;
+  padding: 5.31rem 5rem;
+  background-color: yellow;
 }
 
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(428px, 1fr));
+  grid-gap: 1.44rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -476,6 +489,11 @@ a:active {
   height: auto;
   position: relative;
   /* Required to contain overlay size */
+}
+
+.work-layout {
+  padding-top: 2rem;
+  background-color: aqua;
 }
 
 /* Overlay */
@@ -821,7 +839,7 @@ a:active {
   }*/
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
     grid-gap: 1rem;
   }
 
@@ -897,12 +915,13 @@ a:active {
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: 0.5rem;
+    padding: 5.31rem 5rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
+    padding: 5.31rem 5rem;
   }
 
   /* Sidebar on Large Devices */
@@ -983,7 +1002,7 @@ a:active {
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
     grid-gap: 1rem;
   }
 
@@ -1061,11 +1080,13 @@ a:active {
   .portfolio,
   .project-wrapper {
     padding: 0.5rem;
+    padding: 5.31rem 5rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
+    padding: 5.31rem 5rem;
   }
 
   /* Sidebar on Large Devices */
@@ -1107,7 +1128,7 @@ a:active {
   /* TODO: Add styles here for X-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
   }
 }
 
@@ -1117,6 +1138,6 @@ a:active {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
   }
 }
