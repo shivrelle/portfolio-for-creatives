@@ -362,14 +362,20 @@ a:active {
   background-color: #ffffff;
 }
 
+.hero-gradient-animation {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-header {
   /*margin-bottom: 2rem;*/
-  /*padding: 1.5rem;
-  display: flex;*/
+  padding: 1.5rem;
+  /*display: flex;
+  flex-direction: row;*/
   background: rgba(255, 255, 0, 0.754);
   height: 9rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .index-logo {
@@ -390,7 +396,7 @@ a:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1.5rem 5.31rem;
+  /*padding: 1.5rem 5.31rem;*/
   align-items: center;
   background-color: pink;
 }
@@ -465,12 +471,17 @@ a:active {
 
 */
 
+.work-page {
+  display: flex;
+  flex-direction: column;
+}
+
 .work-wrapper {
   flex: 1;
 }
 
 .work-header {
-  padding: 1.5rem 5.31rem;
+  /* padding: 1.5rem 5.31rem; */
   margin-top: 1.44rem;
   margin-bottom: 1.44rem;
   background: red;
@@ -479,7 +490,7 @@ a:active {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: 5.31rem 5rem;
+  /* padding: 5.31rem 5rem; */
   background-color: yellow;
 }
 
@@ -587,7 +598,7 @@ a:active {
   background: var(--background-color-footer);
   padding: 1rem;
   background: violet;
-  padding-bottom: 8rem;
+  /* padding-bottom: 8rem; */
 }
 
 .footer-item-1 {
@@ -841,9 +852,18 @@ a:active {
 
   .hero {
     min-height: 80vh;
-    padding: 1rem;
+    /*padding: 1rem;*/
   }
-
+  .hero-header {
+    /*margin-bottom: 2rem;*/
+    padding: 1.5rem;
+    /*display: flex;
+    flex-direction: column;*/
+    background: rgba(255, 0, 212, 0.754);
+    height: 9rem;
+    align-items: center;
+    justify-content: space-evenly;
+  }
   /*.hero-headline-wrapper {
    padding: 4rem 4rem;
   }*/
@@ -873,7 +893,7 @@ a:active {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     min-height: 20vh;
-    padding-bottom: 8rem;
+    /* padding-bottom: 8rem; */
   }
 
   .about-item-1 {
@@ -926,13 +946,13 @@ a:active {
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: 5.31rem 5rem;
+    /* padding: 5.31rem 5rem; */
   }
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
-    padding: 5.31rem 5rem;
+    /* padding: 5.31rem 5rem; */
   }
 
   /* Sidebar on Large Devices */
@@ -1011,6 +1031,16 @@ a:active {
     height: 80vh;
     background-color: rgba(0, 255, 255, 0.427);
   }
+  .hero-header {
+    /*margin-bottom: 2rem;*/
+    padding: 1.5rem;
+    /*display: flex;
+   flex-direction: row;*/
+    background: rgba(255, 255, 0, 0.754);
+    height: 9rem;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
@@ -1028,17 +1058,17 @@ a:active {
   }
 
   .about {
-    padding: 4rem;
+    /* padding: 4rem; */
     grid-template-columns: 1fr 1fr;
   }
   .about-image {
     width: 600px;
   }
   .global-footer {
-    padding: 4rem 4rem 0 4rem;
+    /* padding: 4rem 4rem 0 4rem; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     min-height: 15vh;
-    padding-bottom: 8rem;
+    /* padding-bottom: 8rem; */
   }
 
   .about-item-1 {
@@ -1092,13 +1122,13 @@ a:active {
   .portfolio,
   .project-wrapper {
     padding: 0.5rem;
-    padding: 5.31rem 5rem;
+    /* padding: 5.31rem 5rem; */
   }
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
-    padding: 5.31rem 5rem;
+    /* padding: 5.31rem 5rem; */
   }
 
   /* Sidebar on Large Devices */
