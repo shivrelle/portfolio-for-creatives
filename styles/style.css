@@ -503,14 +503,16 @@ a:active {
 .portfolio,
 .project-wrapper {
   /* padding: 5.31rem 5rem; */
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(428px, 1fr));
-  grid-column-gap: 1.44rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  /* margin-top: 1rem;
+  margin-bottom: 2rem; */
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -518,11 +520,12 @@ a:active {
   width: 100%;
   height: auto;
   position: relative;
+  justify-self: center;
   /* Required to contain overlay size */
 }
 
 .work-layout {
-  padding-top: 2rem;
+  padding-top: 1rem;
   background-color: aqua;
 }
 
@@ -602,8 +605,8 @@ a:active {
 
 .global-footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   /* grid-gap: 3rem;*/
   min-height: 30vh;
   min-width: 30vh;
@@ -614,27 +617,31 @@ a:active {
 }
 
 .footer-item-1 {
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
+  grid-column: 1 / 1;
+  grid-row: 1/4;
   background-color: beige;
+  /* height: 25%; */
 }
 
 .footer-item-2 {
-  grid-column: 2 / 4;
-  grid-row: 1/2;
+  grid-column: 1 / 1;
+  grid-row: 2/4;
   background-color: lime;
+  /* height: 25%; */
 }
 
 .footer-item-3 {
-  grid-column: 3/4;
-  grid-row: 1/2;
+  grid-column: 1/1;
+  grid-row: 3/4;
   background-color: royalblue;
+  /* height: 25%; */
 }
 
 .footer-item-4 {
-  grid-column: 4/4;
-  grid-row: 1/2;
+  grid-column: 1/1;
+  grid-row: 4/4;
   background-color: orange;
+  /* height: 25%; */
 }
 
 /* Project Page 
@@ -651,6 +658,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 1.5rem;
 }
 
 /* Sidebar */
@@ -915,7 +923,7 @@ a:active {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
@@ -936,8 +944,8 @@ a:active {
 
   .global-footer {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    min-height: 20vh;
+    grid-template-columns: 1fr 1fr;
+    min-height: 30vh;
     /* padding-bottom: 8rem; */
   }
 
@@ -948,6 +956,7 @@ a:active {
 
   .footer-item-1 {
     grid-row: 1 / 2;
+    grid-column: 1/2;
   }
 
   .about-item-2 {
@@ -960,8 +969,8 @@ a:active {
   }
 
   .footer-item-2 {
-    grid-row: 1 / 1;
-    grid-column: 2/4;
+    grid-row: 2/2;
+    grid-column: 1/2;
   }
 
   .about-item-3 {
@@ -971,7 +980,7 @@ a:active {
 
   .footer-item-3 {
     grid-row: 1 / 2;
-    grid-column: 3/4;
+    grid-column: 2/2;
   }
 
   .about-item-4 {
@@ -982,8 +991,8 @@ a:active {
   }
 
   .footer-item-4 {
-    grid-row: 1 / 2;
-    grid-column: span 2;
+    grid-row: 2/ 2;
+    grid-column: 2/2;
     text-align: center;
     align-self: start;
   }
@@ -1109,7 +1118,7 @@ a:active {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
@@ -1184,15 +1193,15 @@ a:active {
   }
 
   /* Padding around work grid and project page */
-  .portfolio,
+  /* .portfolio,
   .project-wrapper {
-    padding: 0.5rem;
-    /* padding: 5.31rem 5rem; */
-  }
+    /* padding: 0.5rem; */
+  /* padding: 5.31rem 5rem; */
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
     flex-direction: row;
+    margin: 2rem;
     /* padding: 5.31rem 5rem; */
   }
 
@@ -1245,6 +1254,6 @@ a:active {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
 }
