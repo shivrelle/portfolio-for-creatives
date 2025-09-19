@@ -378,9 +378,25 @@ a:active {
   justify-content: space-evenly;
 }
 
+.project-hero-header {
+  /*margin-bottom: 2rem;*/
+  padding: 1rem;
+  /*display: flex;
+ flex-direction: row;*/
+  background: coral;
+  /* height: 9rem; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .index-logo {
   background-color: greenyellow;
   margin-bottom: 2rem;
+}
+
+.project-header-logo {
+  background-color: lightcyan;
+  /* margin-bottom: 2rem; */
 }
 
 .branding-navigation {
@@ -393,6 +409,16 @@ a:active {
   width: 100%;
 }
 
+.project-branding-navigation {
+  display: flex;
+  justify-content: space-between;
+  /*padding: 1rem;*/
+  /* gap: 15rem; */
+  align-items: flex-start;
+  background-color: lemonchiffon;
+  width: 70%;
+}
+
 .header-buttons {
   display: flex;
   flex-direction: column;
@@ -402,6 +428,17 @@ a:active {
   align-items: center;
   background-color: pink;
 }
+
+.project-header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  /* align-items: center; */
+  background-color: pink;
+}
+
 .logo {
   width: 5rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
@@ -605,7 +642,7 @@ a:active {
 
 .global-footer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr;
   /* grid-gap: 3rem;*/
   min-height: 30vh;
@@ -654,6 +691,17 @@ a:active {
                                                                                                
 */
 
+.project-1 {
+  display: flex;
+  flex-direction: column;
+}
+.index-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
 .project-wrapper {
   display: flex;
   flex-direction: column;
@@ -663,7 +711,7 @@ a:active {
 
 /* Sidebar */
 .project-aside {
-  width: 100%;
+  width: 100vw;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -691,8 +739,8 @@ a:active {
 }
 
 .project-image {
-  width: 100%;
-  min-height: 50vh;
+  width: 100vw;
+  /* min-height: 50vh; */
   /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
@@ -717,15 +765,15 @@ a:active {
 /* Main Project Image Area */
 
 .project-details {
-  width: 100%;
+  width: inherit;
   padding: 1rem;
   /* TODO: Delete background-image and the three linear gradient colors to remove the gradient background on the project page. Be careful not to delete the closing } */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     -225deg,
     var(--linear-gradient-color-1) 0%,
     var(--linear-gradient-color-2) 50%,
     var(--linear-gradient-color-3) 100%
-  );
+  ); */
 }
 
 /* 
@@ -992,18 +1040,18 @@ a:active {
 
   .footer-item-4 {
     grid-row: 2/ 2;
-    grid-column: span 2;
+    grid-column: 2/2;
     text-align: center;
     align-self: start;
   }
 
   /* Padding around work grid and project page */
   /*.portfolio,
-  .project-wrapper {
+  .index-wrapper {
     padding: 5.31rem 5rem;  } */
 
   /* Project Page Flex Direction on Large Devices */
-  .project-wrapper {
+  .index-wrapper {
     flex-direction: row;
     /* padding: 5.31rem 5rem; */
   }
@@ -1194,12 +1242,12 @@ a:active {
 
   /* Padding around work grid and project page */
   /* .portfolio,
-  .project-wrapper {
+  .index-wrapper {
     /* padding: 0.5rem; */
   /* padding: 5.31rem 5rem; */
 
   /* Project Page Flex Direction on Large Devices */
-  .project-wrapper {
+  .index-wrapper {
     flex-direction: row;
     margin: 2rem;
     /* padding: 5.31rem 5rem; */
