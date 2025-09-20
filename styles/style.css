@@ -13,9 +13,11 @@
 /* Host Grotesk Font (for headers or special text) */
 @import url("@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap')");
 
-/* Texturina Font (for small headers and paragraph) */
+/* Texturina Font (for small headers) */
 @import url("https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap");
 
+/* Cardo Font (for small headers) */
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
 /*
 
 Imported stylesheets. Remove the ones you do not want to use.
@@ -82,6 +84,7 @@ html {
 :root {
   --body-typeface: "Texturina", serif;
   --heading-typeface: "Host Grotesk", sans-serif;
+  --paragraph-typeface: "Cardo", serif;
   --project-title-typeface: "Host Grotesk", sans-serif;
   --background-color: #e9d2ce;
   --background-color-about: #e9d2ce;
@@ -151,52 +154,51 @@ svg {
 
 h1 {
   font-family: var(--heading-typeface);
-  font-size: 3.75rem;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 4.2625rem; /* 113.667% */
-  letter-spacing: 0.125rem;
+  line-height: 115%; /* 2.15625rem */
+  letter-spacing: 0.0375rem;
   text-transform: uppercase;
   color: var(--h1-color);
 }
 
 h2 {
   font-family: var(--heading-typeface);
-  font-size: 2.5rem;
+  font-size: 1.4375rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 115%; /* 2.875rem */
+  line-height: 120%; /* 1.725rem */
   text-transform: uppercase;
   color: var(--h2-color);
 }
 
 h3 {
   font-family: var(--heading-typeface);
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 2.25rem */
+  line-height: 120%; /* 1.5rem */
   text-transform: uppercase;
   color: var(--h3-color);
 }
 
 h4 {
   font-family: var(--heading-typeface);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.6875rem; /* 112.5% */
+  line-height: 120%; /* 1.5rem */
   text-transform: uppercase;
   color: var(--h4-color);
 }
 
 h5 {
   font-family: var(--body-typeface);
-  font-family: Texturina;
-  font-size: 1.3125rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 120%; /* 1.575rem */
+  line-height: 1.7rem; /* 136% */
   color: var(--h5-color);
 }
 
@@ -204,16 +206,17 @@ h6 {
   font-family: var(--body-typeface);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 130%; /* 1.3rem */
   color: var(--h6-color);
 }
 
 p {
+  font-family: var(--paragraph-typeface);
   font-size: 1rem;
   font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+  font-weight: 400;
+  line-height: 140%; /* 1.4rem */
 }
 
 em {
@@ -707,16 +710,22 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   margin: 1.5rem;
+  background-color: mediumseagreen;
 }
 
 /* Sidebar */
 .project-aside {
-  width: 100vw;
+  /* width: 100vw; */
   padding: 1rem;
   display: flex;
   flex-direction: column;
   color: var(--project-sidebar-text-color);
-  background: var(--project-sidebar-background-color);
+  /* background: var(--project-sidebar-background-color); */
+  background-color: gold;
+}
+
+.project-info {
+  background-color: mistyrose;
 }
 
 .project-navigation {
@@ -739,7 +748,7 @@ a:active {
 }
 
 .project-image {
-  width: 100vw;
+  /* width: 100vw; */
   /* min-height: 50vh; */
   /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
@@ -935,6 +944,18 @@ a:active {
   /*.hero-headline-wrapper {
    padding: 4rem 4rem;
   }*/
+
+  .project-hero-header {
+    /*margin-bottom: 2rem;*/
+    padding: 2rem;
+  }
+
+  .project-custom-navigation{
+    font-size: 8rem;
+  }
+
+  .project-branding-navigation {
+    width: 85%;
 
   .work-header {
     display: flex;
