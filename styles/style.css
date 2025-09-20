@@ -950,12 +950,8 @@ a:active {
     padding: 2rem;
   }
 
-  .project-custom-navigation{
-    font-size: 8rem;
-  }
-
   .project-branding-navigation {
-    width: 85%;
+    width: 70%;
 
   .work-header {
     display: flex;
