@@ -397,10 +397,9 @@ a:active {
   margin-bottom: 2rem;
 }
 
-.project-header-logo {
+/* .project-header-logo {
   /* background-color: lightcyan; */
-  /* margin-bottom: 2rem; */
-}
+/* margin-bottom: 2rem; */
 
 .branding-navigation {
   display: flex;
@@ -540,11 +539,10 @@ a:active {
   margin: 0 auto;
 }
 /* Padding around work grid and project page */
-.portfolio,
+/* .portfolio,
 .project-wrapper {
   /* padding: 5.31rem 5rem; */
-  /* background-color: yellow; */
-}
+/* background-color: yellow;  */
 
 /* Defining the work page grid */
 .grid {
@@ -765,9 +763,9 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   /* background-color: skyblue; */
 }
 
-.project-info {
-  /* background-color: mistyrose; */
-}
+/* .project-info {
+  /* background-color: mistyrose; 
+} */
 
 .project-navigation {
   display: flex;
@@ -891,17 +889,92 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 ██      ███████ ██   ██    ██    
 */
 
-.play-page {
+/* .play-page {
   display: grid;
   place-items: center;
 }
 
 .play-page-inner-container {
   text-align: center;
-}
+} */
 
 .play-page-title {
   color: var(--accent-color);
+}
+
+.gallery-wrapper {
+  margin: 0 4rem 0 4rem;
+  background-color: lightcyan;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1.25rem;
+  row-gap: 5rem;
+  padding: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  width: 90vw;
+  justify-self: center;
+  transition: 0.3s;
+  /* margin: 0 4rem 0 4rem; */
+  background-color: mediumseagreen;
+}
+
+&:hover .gallery__image {
+  filter: grayscale(1);
+}
+
+& .gallery__link {
+  overflow: hidden;
+  height: 600px;
+  /* // min-height: 50vh;
+    // max-height: 100vh;
+    // max-height: 400px; */
+
+  &:hover {
+    .gallery__image {
+      filter: grayscale(0);
+    }
+
+    .gallery__caption {
+      opacity: 1;
+    }
+  }
+}
+
+&.gallery__thumb {
+  position: relative;
+  height: 100%;
+}
+
+&.gallery__image {
+  display: block;
+  width: 30vw;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+&.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
 }
 
 /*
@@ -935,8 +1008,15 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 ██  ██  ██ ██      ██   ██ ██ ██   ██     ██ ▄▄ ██ ██    ██ ██      ██   ██ ██ ██           ██ 
 ██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██ ██ ███████ ███████ 
 
-*/
 
+
+███████  ██████   █████      ██████  ██   ██ 
+     ██ ██       ██   ██     ██   ██  ██ ██  
+    ██  ███████   █████      ██████    ███   
+   ██   ██    ██ ██   ██     ██       ██ ██  
+   ██    ██████   █████      ██      ██   ██ 
+                                             
+   */
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
@@ -1181,7 +1261,48 @@ p {
   /* background-color: mediumseagreen; */
 }
 
-/* Large devices (desktops, 992px and up) */
+.gallery {
+  grid-template-columns: repeat(2, 1fr);
+  width: auto;
+  column-gap: 1.25rem;
+  row-gap: 1rem;
+  padding: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  justify-self: center;
+  transition: 0.3s;
+  /* margin: 0 4rem 0 4rem; */
+}
+
+& .gallery__link {
+  overflow: hidden;
+  height: 600px;
+  /* // min-height: 50vh;
+    // max-height: 100vh;
+    // max-height: 400px; */
+
+  &:hover {
+    .gallery__image {
+      filter: grayscale(0);
+    }
+
+    .gallery__caption {
+      opacity: 1;
+    }
+  }
+}
+
+/* 
+
+ █████   █████  ██████      ██████  ██   ██ 
+██   ██ ██   ██      ██     ██   ██  ██ ██  
+ ██████  ██████  █████      ██████    ███   
+     ██      ██ ██          ██       ██ ██  
+ █████   █████  ███████     ██      ██   ██ 
+                                            
+                                            
+
+Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
@@ -1388,10 +1509,10 @@ p {
     /* background-color: deepskyblue; */
   }
 
-  .project-image {
+  /* .project-image {
     /* min-height: 70vh; */
-    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
-  }
+  /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. 
+  } */
 
   .project-image-container {
     flex-direction: row;
@@ -1409,7 +1530,39 @@ p {
   }
 }
 
-/* X-Large devices (large desktops, 1200px and up)*/
+.gallery {
+  grid-template-columns: repeat(3, 1fr);
+  width: auto;
+}
+
+& .gallery__link {
+  overflow: hidden;
+  height: 300px;
+  /* // min-height: 50vh;
+    // max-height: 100vh;
+    // max-height: 400px; */
+
+  &:hover {
+    .gallery__image {
+      filter: grayscale(0);
+    }
+
+    .gallery__caption {
+      opacity: 1;
+    }
+  }
+}
+
+/* 
+
+ ██ ██████   ██████   ██████      ██████  ██   ██ 
+███      ██ ██  ████ ██  ████     ██   ██  ██ ██  
+ ██  █████  ██ ██ ██ ██ ██ ██     ██████    ███   
+ ██ ██      ████  ██ ████  ██     ██       ██ ██  
+ ██ ███████  ██████   ██████      ██      ██   ██ 
+                                                  
+
+X-Large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
   /* TODO: Add styles here for X-large devices. */
@@ -1430,9 +1583,32 @@ p {
 
   .grid {
     grid-template-columns: repeat(3, 1fr);
+    width: auto;
   }
 
   .grid-more-work {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  & .gallery__link {
+    overflow: hidden;
+    height: 600px;
+    /* // min-height: 50vh;
+      // max-height: 100vh;
+      // max-height: 400px; */
+
+    &:hover {
+      .gallery__image {
+        filter: grayscale(0);
+      }
+
+      .gallery__caption {
+        opacity: 1;
+      }
+    }
   }
 }
