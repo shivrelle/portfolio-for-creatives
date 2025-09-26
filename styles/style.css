@@ -57,7 +57,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/temp/up-cursor.png"), auto !important;
+  /* cursor: url("../assets/temp/up-cursor.png"), auto !important; */
   /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
@@ -86,7 +86,7 @@ html {
   --heading-typeface: "Host Grotesk", sans-serif;
   --paragraph-typeface: "Cardo", serif;
   --project-title-typeface: "Host Grotesk", sans-serif;
-  --background-color: #e9d2ce;
+  --background-color: #ffffff;
   --background-color-about: #e9d2ce;
   --background-color-footer: #e9d2ce;
   --alt-background-color: #ffffff;
@@ -386,19 +386,19 @@ a:active {
   padding: 1rem;
   /*display: flex;
  flex-direction: row;*/
-  background: coral;
+  /* background: coral; */
   /* height: 9rem; */
   align-items: center;
   justify-content: space-evenly;
 }
 
 .index-logo {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   margin-bottom: 2rem;
 }
 
 .project-header-logo {
-  background-color: lightcyan;
+  /* background-color: lightcyan; */
   /* margin-bottom: 2rem; */
 }
 
@@ -408,7 +408,7 @@ a:active {
   /*padding: 1rem;*/
   /* gap: 15rem; */
   align-items: flex-start;
-  background-color: #297913;
+  /* background-color: #297913; */
   width: 100%;
 }
 
@@ -418,7 +418,7 @@ a:active {
   /*padding: 1rem;*/
   /* gap: 15rem; */
   align-items: flex-start;
-  background-color: lemonchiffon;
+  /* background-color: lemonchiffon; */
   width: 70%;
 }
 
@@ -429,7 +429,7 @@ a:active {
   align-items: flex-end;
   width: 80%;
   align-items: center;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .project-header-buttons {
@@ -439,7 +439,7 @@ a:active {
   align-items: flex-end;
   width: 100%;
   /* align-items: center; */
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .logo {
@@ -530,13 +530,13 @@ a:active {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background: red;
+  /* background: red; */
   min-height: 6rem;
   padding: 1.5rem;
 }
 .work-title {
   width: 80%;
-  background: lemonchiffon;
+  /* background: lemonchiffon; */
   margin: 0 auto;
 }
 /* Padding around work grid and project page */
@@ -556,7 +556,22 @@ a:active {
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
+.grid-more-work {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));*/
+  grid-gap: 1rem;
+  background-color: lemonchiffon;
+  padding: 2rem;
+}
 .work-page-grid-item {
+  width: 100%;
+  height: auto;
+  position: relative;
+  justify-self: center;
+  /* Required to contain overlay size */
+}
+
+.more-work-page-grid-item {
   width: 100%;
   height: auto;
   position: relative;
@@ -566,7 +581,7 @@ a:active {
 
 .work-layout {
   padding-top: 1rem;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 /* Overlay */
@@ -590,6 +605,11 @@ a:active {
 }
 
 .work-page-grid-item:hover .overlay {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+.more-work-page-grid-item:hover .overlay {
   visibility: visible;
   opacity: 0.8;
 }
@@ -659,28 +679,28 @@ a:active {
 .footer-item-1 {
   grid-column: 1 / 1;
   grid-row: 1/4;
-  background-color: beige;
+  /* background-color: beige; */
   /* height: 25%; */
 }
 
 .footer-item-2 {
   grid-column: 1 / 1;
   grid-row: 2/4;
-  background-color: lime;
+  /* background-color: lime; */
   /* height: 25%; */
 }
 
 .footer-item-3 {
   grid-column: 1/1;
   grid-row: 3/4;
-  background-color: royalblue;
+  /* background-color: royalblue; */
   /* height: 25%; */
 }
 
 .footer-item-4 {
   grid-column: 1/1;
   grid-row: 4/4;
-  background-color: orange;
+  /* background-color: orange; */
   /* height: 25%; */
 }
 
@@ -694,10 +714,17 @@ a:active {
                                                                                                
 */
 
+/*
+HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 .project-1 {
   display: flex;
   flex-direction: column;
-}
+  background-image: url(../assets/temp/heyday.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: -10vh;
+  background-position-y: 50vh;
+} */
 .index-wrapper {
   display: flex;
   flex-direction: column;
@@ -705,12 +732,17 @@ a:active {
   margin: 1.5rem;
 }
 
+.more-projects {
+  padding: 1rem;
+  /* background-color: lavender; */
+}
+
 .project-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 1.5rem;
-  background-color: mediumseagreen;
+  /* background-color: mediumseagreen; */
 }
 
 /* Sidebar */
@@ -721,11 +753,20 @@ a:active {
   flex-direction: column;
   color: var(--project-sidebar-text-color);
   /* background: var(--project-sidebar-background-color); */
-  background-color: gold;
+  /* background-color: gold; */
+}
+
+.project-aside-more-work {
+  /* width: 100vw; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--project-sidebar-text-color);
+  /* background-color: skyblue; */
 }
 
 .project-info {
-  background-color: mistyrose;
+  /* background-color: mistyrose; */
 }
 
 .project-navigation {
@@ -754,6 +795,7 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .large-emoji-placeholder {
@@ -776,6 +818,7 @@ a:active {
 .project-details {
   width: inherit;
   padding: 1rem;
+  /* background-color: deepskyblue; */
   /* TODO: Delete background-image and the three linear gradient colors to remove the gradient background on the project page. Be careful not to delete the closing } */
   /* background-image: linear-gradient(
     -225deg,
@@ -901,70 +944,70 @@ a:active {
   .holding-page-title {
     font-size: 2rem;
   }
+}
+h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+}
 
-  h1 {
-    font-size: 2.75rem;
-    font-weight: 800;
-  }
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-  }
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+}
 
-  h3 {
-    font-size: 1.75rem;
-    line-height: 1.75rem;
-    font-weight: 300;
-  }
+p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.logo {
+  width: 4rem;
+  /* TODO: Adjust the width of the logo on large devices here. */
+}
 
-  p {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-  .logo {
-    width: 4rem;
-    /* TODO: Adjust the width of the logo on large devices here. */
-  }
-
-  .hero {
-    min-height: 80vh;
-    /*padding: 1rem;*/
-  }
-  .hero-header {
-    /*margin-bottom: 2rem;*/
-    padding: 1.5rem;
-    /*display: flex;
+.hero {
+  min-height: 80vh;
+  /*padding: 1rem;*/
+}
+.hero-header {
+  /*margin-bottom: 2rem;*/
+  padding: 1.5rem;
+  /*display: flex;
     flex-direction: column;*/
-    background: rgba(255, 0, 212, 0.754);
-    height: 9rem;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  /*.hero-headline-wrapper {
+  background: rgba(255, 0, 212, 0.754);
+  height: 9rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/*.hero-headline-wrapper {
    padding: 4rem 4rem;
   }*/
 
-  .project-hero-header {
-    /*margin-bottom: 2rem;*/
-    padding: 2rem;
-  }
+.project-hero-header {
+  /*margin-bottom: 2rem;*/
+  padding: 2rem;
+}
 
-  .project-branding-navigation {
-    width: 70%;
+.project-branding-navigation {
+  width: 90%;
 
   .work-header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: red;
+    /* background: red; */
     min-height: 6rem;
     padding: 1.5rem;
   }
   .work-title {
     width: 90%;
-    background: lemonchiffon;
+    /* background: lemonchiffon; */
     margin: 0 auto;
   }
 
@@ -991,13 +1034,27 @@ a:active {
     grid-gap: 1.5rem;
   }
 
+  .grid-more-work {
+    grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
+    /* grid-gap: 1.5rem; */
+  }
+
   /* Grayscale filter with full-colour on hover and tap */
   .work-page-grid-item a.grayscale img {
     filter: grayscale(100);
   }
 
+  .more-work-page-grid-item a.grayscale img {
+    filter: grayscale(100);
+  }
+
   .work-page-grid-item > a.grayscale:active img,
   .work-page-grid-item > a.grayscale:hover img {
+    filter: grayscale(0);
+  }
+
+  .more-work-page-grid-item > a.grayscale:active img,
+  .more-work-page-grid-item > a.grayscale:hover img {
     filter: grayscale(0);
   }
 
@@ -1077,15 +1134,24 @@ a:active {
   .project-aside {
     width: 35%;
     height: 65vh;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;
+    position: sticky; */
     top: 5vh;
     padding-right: 2rem;
   }
 
+  .project-aside-more-work {
+    /* width: 35%; */
+    /* height: 65vh; */
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 5vh;
+    padding-right: 2rem;
+  }
   /* Main Project Image Area on Large Devices */
   .project-details {
     width: 65%;
+    /* background-color: deepskyblue; */
   }
 
   .project-image {
@@ -1106,10 +1172,23 @@ a:active {
   }
 }
 
+.project-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1.5rem;
+  /* background-color: mediumseagreen; */
+}
+
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
+
+  .index-logo {
+    margin-bottom: 0rem;
+  }
 
   .holding-page-title {
     font-size: 2rem;
@@ -1171,13 +1250,13 @@ a:active {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: red;
+    /* background: red; */
     min-height: 6rem;
     padding: 1.5rem;
   }
   .work-title {
     width: 95%;
-    background: lemonchiffon;
+    /* background: lemonchiffon; */
     margin: 0 auto;
   }
 
@@ -1186,6 +1265,10 @@ a:active {
     grid-gap: 1.5rem;
   }
 
+  /* .grid-more-work {
+    grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
+    /* grid-gap: 1.5rem; */
+
   /* Grayscale filter with full-colour on hover and tap */
   .work-page-grid-item a.grayscale img {
     filter: grayscale(100);
@@ -1193,6 +1276,15 @@ a:active {
 
   .work-page-grid-item > a.grayscale:active img,
   .work-page-grid-item > a.grayscale:hover img {
+    filter: grayscale(0);
+  }
+
+  .more-work-page-grid-item a.grayscale img {
+    filter: grayscale(100);
+  }
+
+  .more-work-page-grid-item > a.grayscale:active img,
+  .more-work-page-grid-item > a.grayscale:hover img {
     filter: grayscale(0);
   }
 
@@ -1207,6 +1299,7 @@ a:active {
     /* padding: 4rem 4rem 0 4rem; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     min-height: 15vh;
+    grid-template-rows: 1fr;
     /* padding-bottom: 8rem; */
   }
 
@@ -1274,8 +1367,17 @@ a:active {
   .project-aside {
     width: 35%;
     height: 65vh;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 5vh;
+    padding-right: 2rem;
+  }
+
+  .project-aside-more-work {
+    /* width: 35%; */
+    /* height: 65vh; */
+    /* position: -webkit-sticky;
+    position: sticky; */
     top: 5vh;
     padding-right: 2rem;
   }
@@ -1283,10 +1385,11 @@ a:active {
   /* Main Project Image Area on Large Devices */
   .project-details {
     width: 65%;
+    /* background-color: deepskyblue; */
   }
 
   .project-image {
-    min-height: 70vh;
+    /* min-height: 70vh; */
     /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
   }
 
@@ -1298,6 +1401,9 @@ a:active {
     justify-content: flex-start;
   }
 
+  .branding-navigation {
+    width: 80%;
+  }
   .arrow {
     padding-right: 1rem;
   }
@@ -1311,6 +1417,10 @@ a:active {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
   }
+
+  /* .grid-more-work {
+    grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
+  } */
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -1319,6 +1429,10 @@ a:active {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-more-work {
     grid-template-columns: repeat(3, 1fr);
   }
 }
