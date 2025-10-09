@@ -85,7 +85,7 @@ html {
   --project-title-typeface: "Fraunces", serif;
   --background-color: #f3f2f2;
   --background-color-about: #e9d2ce;
-  --background-color-footer: #e9d2ce;
+  --background-color-footer: linear-gradient(0deg, #bce4ff 0%, #f3f2f2 100%);
   --alt-background-color: #ffffff;
   --background-color-holding-page: #fcf463;
   --h1-color: #131313;
@@ -98,7 +98,7 @@ html {
   --holding-page-title-color: #ffffff;
   --accent-color: #a9d8b9;
   --overlay-color: #171717;
-  --overlay-title-color: #a9d8b9;
+  --overlay-title-color: #79c8fe;
   --overlay-description-color: #ffffff;
   --hyperlink-color: #171717;
   --hyperlink-alternate-color: orangered;
@@ -241,8 +241,11 @@ em {
 }
 
 .overlay-title {
-  font-size: 2.875rem;
+  letter-spacing: -0.075rem;
+  text-transform: uppercase;
+  text-align: center;
   color: var(--overlay-title-color);
+  font-size: 1.5rem;
 }
 
 .overlay-description {
@@ -321,11 +324,11 @@ a:active {
 }
 .footer-nav-item {
   line-height: 1.3;
-  font-family: var(--heading-typeface);
-  font-size: 1.5rem;
+  font-family: var(--body-typeface);
+  font-size: 1.125rem;
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.6875rem; /* 112.5% */
+  font-weight: 275;
+  line-height: normal;
   text-transform: uppercase;
   color: var(--h4-color);
 }
@@ -627,6 +630,16 @@ a:active {
   /* Required to contain overlay size */
 }
 
+.work-page-img {
+  border-radius: 0.85431rem;
+  box-shadow: 3px 3px 10px lightgray;
+}
+
+.work-page-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
 .more-work-page-grid-item {
   width: 100%;
   height: auto;
@@ -636,7 +649,14 @@ a:active {
 }
 
 .work-layout {
-  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 85%; */
   /* background-color: aqua; */
 }
 
@@ -656,6 +676,7 @@ a:active {
   align-items: center;
   flex-direction: column;
   padding: 1em;
+  border-radius: 0.85431rem;
   background-color: var(--overlay-color);
   transition: opacity 0.3s, visibility 0.3s;
 }
@@ -728,7 +749,7 @@ a:active {
   min-width: 30vh;
   background: var(--background-color-footer);
   padding: 1rem;
-  background: violet;
+  /* background: violet; */
   /* padding-bottom: 8rem; */
 }
 
