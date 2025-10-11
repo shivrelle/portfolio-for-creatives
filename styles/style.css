@@ -664,9 +664,16 @@ a:active {
   padding: 0.5rem;
 }
 
+.work-category-project {
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding-right: 0.5rem;
+}
+
 .project-category {
   display: flex;
   flex-direction: row;
+  padding-bottom: 1rem;
 }
 
 /* Overlay */
@@ -838,7 +845,7 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 
 /* Sidebar */
 .project-aside {
-  /* width: 100vw; */
+  width: 100vw;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -857,7 +864,7 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 }
 
 /* .project-info {
-  /* background-color: mistyrose; 
+  background-color: mistyrose;
 } */
 
 .project-navigation {
@@ -886,7 +893,7 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .more-projects-img {
