@@ -234,7 +234,7 @@ em {
 }
 
 .project-title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
@@ -414,7 +414,7 @@ a:active {
   /*display: flex;
  flex-direction: row;*/
   /* background: coral; */
-  /* height: 9rem; */
+  height: 9rem;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -620,7 +620,6 @@ a:active {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));*/
   grid-gap: 1rem;
-  background-color: lemonchiffon;
   padding: 2rem;
 }
 .work-page-grid-item {
@@ -663,6 +662,11 @@ a:active {
 
 .work-category {
   padding: 0.5rem;
+}
+
+.project-category {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Overlay */
@@ -820,21 +824,22 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 
 .more-projects {
   padding: 1rem;
-  /* background-color: lavender; */
+  padding-bottom: 2rem;
+  background-color: #f3f2f2;
 }
 
 .project-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 1.5rem;
+  /* margin: 1.5rem; */
   /* background-color: mediumseagreen; */
 }
 
 /* Sidebar */
 .project-aside {
   /* width: 100vw; */
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   color: var(--project-sidebar-text-color);
@@ -882,6 +887,10 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
+}
+
+.more-projects-img {
+  border-radius: 0.85431rem;
 }
 
 .large-emoji-placeholder {
@@ -1386,7 +1395,7 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 1.5rem;
+  /* margin: 1.5rem; */
   /* background-color: mediumseagreen; */
 }
 
