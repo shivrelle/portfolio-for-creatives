@@ -85,7 +85,7 @@ html {
   --project-title-typeface: "Fraunces", serif;
   --background-color: #f3f2f2;
   --background-color-about: #e9d2ce;
-  --background-color-footer: linear-gradient(0deg, #bce4ff 0%, #f3f2f2 100%);
+  --background-color-footer: #f3f2f2;
   --alt-background-color: #ffffff;
   --background-color-holding-page: #fcf463;
   --h1-color: #131313;
@@ -226,7 +226,7 @@ em {
 .fineprint {
   font-size: 0.875rem;
   color: #171717;
-  min-width: 100ch;
+  width: 100%;
 }
 
 .hero-headline {
@@ -234,7 +234,7 @@ em {
 }
 
 .project-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
@@ -358,7 +358,7 @@ a:active {
 .project-description {
   font-size: 1rem;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .index-header {
@@ -403,7 +403,7 @@ a:active {
   /*display: flex;
     flex-direction: column;*/
   background: #f3f2f2;
-  background: linear-gradient(180deg, #79c8fe 0%, #f3f2f2 100%);
+  /* background: linear-gradient(180deg, #79c8fe 0%, #f3f2f2 100%); */
   align-items: center;
   justify-content: space-evenly;
 }
@@ -601,10 +601,6 @@ a:active {
   text-transform: uppercase;
 }
 /* Padding around work grid and project page */
-/* .portfolio,
-.project-wrapper {
-  /* padding: 5.31rem 5rem; */
-/* background-color: yellow;  */
 
 /* Defining the work page grid */
 .grid {
@@ -620,7 +616,7 @@ a:active {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));*/
   grid-gap: 1rem;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 .work-page-grid-item {
   width: 100%;
@@ -762,9 +758,10 @@ a:active {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   /* grid-gap: 3rem;*/
   min-height: 30vh;
-  min-width: 30vh;
-  background: linear-gradient(0deg, #bce4ff 20%, #f3f2f2 100%);
+  width: 100%;
+  /* background: linear-gradient(0deg, #bce4ff 20%, #f3f2f2 100%); */
   padding: 1rem;
+  padding-top: 3rem;
   /* background: violet; */
   /* padding-bottom: 8rem; */
 }
@@ -838,15 +835,12 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 .project-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* margin: 1.5rem; */
-  /* background-color: mediumseagreen; */
 }
 
 /* Sidebar */
 .project-aside {
-  width: 100vw;
-  padding: 2rem;
+  width: 100%;
+  padding: 1.75rem;
   display: flex;
   flex-direction: column;
   color: var(--project-sidebar-text-color);
@@ -861,6 +855,11 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   flex-direction: column;
   color: var(--project-sidebar-text-color);
   /* background-color: skyblue; */
+}
+
+.sticky-row {
+  display: flex;
+  flex-direction: column;
 }
 
 /* .project-info {
@@ -893,7 +892,7 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .more-projects-img {
@@ -1173,10 +1172,15 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
     /*display: flex;
     flex-direction: column;*/
     background: #f3f2f2;
-    background: linear-gradient(180deg, #79c8fe 0%, #f3f2f2 100%);
+    /* background: linear-gradient(180deg, #79c8fe 0%, #f3f2f2 100%); */
     align-items: center;
     justify-content: space-evenly;
   }
+
+  /* .project-info {
+    width: 85%;
+    align-self: center;
+  } */
 
   .hero-gradient-animation {
     margin-bottom: 1rem;
@@ -1197,13 +1201,39 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
     width: fit-content;
   }
 
+  .sticky-row {
+    flex-direction: column;
+  }
+
   .project-hero-header {
-    /*margin-bottom: 2rem;*/
-    padding: 2rem;
+    height: 10vh;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+    line-height: inherit;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  .project-category {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
   }
 
   .project-branding-navigation {
     width: 90%;
+  }
+
+  .work-category-project {
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding-right: 1.5rem;
   }
 
   .work-header {
@@ -1357,12 +1387,12 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 
   /* Sidebar on Large Devices */
   .project-aside {
-    width: 35%;
-    height: 65vh;
+    width: 100%;
+    /* height: 65vh; */
     /* position: -webkit-sticky;
-    position: sticky; */
-    top: 5vh;
-    padding-right: 2rem;
+    position: sticky;
+    top: 0; */
+    padding: 2rem;
   }
 
   .project-aside-more-work {
@@ -1375,14 +1405,20 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   }
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 65%;
+    width: 100%;
+    padding: 1rem;
     /* background-color: deepskyblue; */
   }
 
   .project-image {
-    min-height: 70vh;
-    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
+    margin-bottom: 0.75rem;
   }
+  .custom-navigation {
+    font-size: 1rem;
+  }
+  /* .project-image {
+    min-height: 70vh;} */
+  /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
 
   .project-image-container {
     flex-direction: row;
@@ -1395,47 +1431,44 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   .arrow {
     padding-right: 1rem;
   }
-}
 
-.project-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* margin: 1.5rem; */
-  /* background-color: mediumseagreen; */
-}
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.gallery {
-  grid-template-columns: repeat(2, 1fr);
-  width: auto;
-  column-gap: 1.25rem;
-  row-gap: 1rem;
-  padding: 2rem;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  justify-self: center;
-  transition: 0.3s;
-  /* margin: 0 4rem 0 4rem; */
-}
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    column-gap: 1.25rem;
+    row-gap: 1rem;
+    padding: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    justify-self: center;
+    transition: 0.3s;
+    /* margin: 0 4rem 0 4rem; */
+  }
 
-& .gallery__link {
-  overflow: hidden;
-  height: 600px;
-  /* // min-height: 50vh;
+  & .gallery__link {
+    overflow: hidden;
+    height: 600px;
+    /* // min-height: 50vh;
     // max-height: 100vh;
     // max-height: 400px; */
 
-  &:hover {
-    .gallery__image {
-      filter: grayscale(0);
-    }
+    &:hover {
+      .gallery__image {
+        filter: grayscale(0);
+      }
 
-    .gallery__caption {
-      opacity: 1;
+      .gallery__caption {
+        opacity: 1;
+      }
     }
   }
-}
+} /*james added this ending thingy */
 
 /* 
 
@@ -1466,8 +1499,9 @@ Large devices (desktops, 992px and up) */
   }
 
   h2 {
-    font-size: 1.5625rem;
+    font-size: 1rem;
     font-weight: 400;
+    letter-spacing: -0.05rem;
   }
 
   h3 {
@@ -1488,6 +1522,10 @@ Large devices (desktops, 992px and up) */
   .logo {
     width: 5rem;
     /* TODO: Adjust the width of the logo on large devices here. */
+  }
+
+  .custom-navigation {
+    font-size: 1rem;
   }
 
   .hero {
@@ -1527,6 +1565,33 @@ Large devices (desktops, 992px and up) */
     width: 100%;
   }
 
+  .sticky-row {
+    flex-direction: row;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .project-category {
+    width: 100%;
+  }
+
+  .work-category-project {
+    font-size: 0.7rem;
+  }
+
+  .grid-more-work {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .more-projects-title {
+    font-size: 1.5rem;
+  }
   .work-header {
     display: flex;
     flex-direction: column;
@@ -1585,6 +1650,10 @@ Large devices (desktops, 992px and up) */
     /* padding-bottom: 8rem; */
   }
 
+  .footer-nav-item {
+    font-size: 1rem;
+    letter-spacing: -0.025rem;
+  }
   .about-item-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -1648,7 +1717,7 @@ Large devices (desktops, 992px and up) */
   /* Sidebar on Large Devices */
   .project-aside {
     width: 35%;
-    height: 65vh;
+    height: inherit;
     /* position: -webkit-sticky;
     position: sticky; */
     top: 5vh;
@@ -1667,11 +1736,14 @@ Large devices (desktops, 992px and up) */
   /* Main Project Image Area on Large Devices */
   .project-details {
     width: 65%;
+    padding: 0rem;
     /* background-color: deepskyblue; */
   }
 
-  /* .project-image {
-    /* min-height: 70vh; */
+  .project-image {
+    margin-bottom: 1rem;
+  }
+  /* min-height: 70vh; */
   /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. 
   } */
 
@@ -1743,8 +1815,20 @@ X-Large devices (large desktops, 1200px and up)*/
   }
 
   .global-footer {
-    min-height: 40vh;
     padding-top: 2rem;
+  }
+
+  .project-hero-header {
+    height: 8vh;
+  }
+
+  .project-info {
+    width: 100%;
+    /* height: 65vh; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 2rem;
   }
 }
 
@@ -1753,12 +1837,25 @@ X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1400px) {
   /* TODO: Add styles here for XX-large devices. */
 
+  .sticky-row {
+    display: flex;
+    flex-direction: row;
+  }
   .hero-header {
     height: 15vh;
   }
 
   .header-buttons {
     padding: 2rem;
+  }
+
+  .project-hero-header {
+    height: 10vh;
+    margin: 1rem;
+  }
+
+  .work-category-project {
+    font-size: 0.9rem;
   }
 
   .custom-navigation {
@@ -1799,7 +1896,7 @@ X-Large devices (large desktops, 1200px and up)*/
   }
 
   .index-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
   }
 
