@@ -713,7 +713,7 @@ a:active {
                                            
 */
 
-.about {
+/* .about {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
@@ -740,7 +740,7 @@ a:active {
 .about-item-4 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-}
+} */
 
 /* Global Footer
 
@@ -816,7 +816,7 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   background-position-y: 50vh;
 } */
 
-.project-1 {
+.project-1-sonus {
   background-color: #fffefe;
 }
 .index-wrapper {
@@ -1342,7 +1342,7 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   }
 
   .about-image {
-    width: 400px;
+    height: 70vh;
   }
 
   .footer-item-2 {
@@ -1640,7 +1640,7 @@ Large devices (desktops, 992px and up) */
     grid-template-columns: 1fr 1fr;
   }
   .about-image {
-    width: 600px;
+    height: 70vh;
   }
   .global-footer {
     /* padding: 4rem 4rem 0 4rem; */
@@ -1829,6 +1829,18 @@ X-Large devices (large desktops, 1200px and up)*/
     position: sticky;
     top: 0;
     padding: 2rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%; /* 1.79688rem */
+    letter-spacing: -0.09375rem;
   }
 }
 
