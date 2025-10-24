@@ -240,6 +240,14 @@ em {
   margin-bottom: 1rem;
 }
 
+#sonus.project-title {
+  color: #f3f2f2;
+}
+
+#wellfare.project-title {
+  color: #caff59;
+}
+
 .overlay-title {
   letter-spacing: -0.075rem;
   text-transform: uppercase;
@@ -363,6 +371,14 @@ a:active {
   margin-bottom: 2rem;
 }
 
+#sonus.project-description {
+  color: #f3f2f2;
+}
+
+#wellfare.project-description {
+  color: #f3f2f2;
+}
+
 .index-header {
   padding: 1rem;
 }
@@ -374,6 +390,14 @@ a:active {
   font-weight: 250;
   line-height: normal;
   text-transform: uppercase;
+}
+
+#sonus.custom-navigation:visited {
+  color: #f3f2f2;
+}
+
+#wellfare.custom-navigation {
+  color: #caff59;
 }
 
 /*
@@ -668,6 +692,14 @@ a:active {
   padding-right: 0.5rem;
 }
 
+#sonus.work-category-project {
+  color: #f3f2f2;
+}
+
+#wellfare.work-category-project {
+  color: #f3f2f2;
+}
+
 .project-category {
   display: flex;
   flex-direction: row;
@@ -795,6 +827,7 @@ a:active {
   /* background: linear-gradient(0deg, #bce4ff 20%, #f3f2f2 100%); */
   padding: 1rem;
   padding-top: 3rem;
+  background-color: #f3f2f2;
   /* background: violet; */
   /* padding-bottom: 8rem; */
 }
@@ -850,7 +883,7 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 } */
 
 .project-1-sonus {
-  background-color: #fffefe;
+  background-color: #040404;
 }
 .index-wrapper {
   display: flex;
@@ -868,6 +901,10 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 .project-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+#wellfare.project-wrapper {
+  background-color: #040404;
 }
 
 /* Sidebar */
@@ -1245,6 +1282,14 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   .project-title {
     font-size: 1.5rem;
     line-height: inherit;
+  }
+
+  #sonus.project-title {
+    color: #f3f2f2;
+  }
+
+  #wellfare.project-title {
+    color: #caff59;
   }
 
   .project-description {
@@ -1923,7 +1968,7 @@ X-Large devices (large desktops, 1200px and up)*/
   }
 
   .project-title {
-    font-size: 1.5625rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 600;
     line-height: 115%; /* 1.79688rem */
