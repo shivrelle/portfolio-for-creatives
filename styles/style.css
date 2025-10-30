@@ -965,6 +965,10 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   margin-bottom: 1rem;
 }
 
+.image-row {
+  display: flex;
+  flex-direction: row;
+}
 .more-projects-img {
   border-radius: 0.85431rem;
 }
