@@ -248,6 +248,10 @@ em {
   color: #caff59;
 }
 
+#seastar.project-title {
+  color: #271f2d;
+}
+
 .overlay-title {
   letter-spacing: -0.075rem;
   text-transform: uppercase;
@@ -379,6 +383,10 @@ a:active {
   color: #f3f2f2;
 }
 
+#seastar.project-description {
+  color: #271f2d;
+}
+
 .index-header {
   padding: 1rem;
 }
@@ -398,6 +406,10 @@ a:active {
 
 #wellfare.custom-navigation {
   color: #caff59;
+}
+
+#seastar.custom-navigation {
+  color: #271f2d;
 }
 
 /*
@@ -700,6 +712,10 @@ a:active {
   color: #f3f2f2;
 }
 
+#seastar.work-category-project {
+  color: #271f2d;
+}
+
 .project-category {
   display: flex;
   flex-direction: row;
@@ -907,6 +923,10 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   background-color: #040404;
 }
 
+#seastar.project-wrapper {
+  background-color: white;
+}
+
 /* Sidebar */
 .project-aside {
   width: 100%;
@@ -1001,6 +1021,16 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
     var(--linear-gradient-color-2) 50%,
     var(--linear-gradient-color-3) 100%
   ); */
+}
+
+.project-details iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Keeps correct proportions */
+  max-width: 100%;
+  border: none;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 /* 
@@ -1294,6 +1324,10 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
 
   #wellfare.project-title {
     color: #caff59;
+  }
+
+  #seastar.project-title {
+    color: #271f2d;
   }
 
   .project-description {
