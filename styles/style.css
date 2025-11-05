@@ -97,7 +97,7 @@ html {
   --primary-text-color: #171717;
   --holding-page-title-color: #ffffff;
   --accent-color: #a9d8b9;
-  --overlay-color: #171717;
+  --overlay-color: rgb(23, 23, 23, 0.6);
   --overlay-title-color: #79c8fe;
   --overlay-description-color: #ffffff;
   --hyperlink-color: #171717;
@@ -656,7 +656,11 @@ a:active {
   grid-gap: 1rem;
   /* padding: 2rem; */
 }
+
 .work-page-grid-item {
+  width: 100%;
+}
+.overlay-area {
   width: 100%;
   height: auto;
   position: relative;
@@ -743,9 +747,9 @@ a:active {
   transition: opacity 0.3s, visibility 0.3s;
 }
 
-.work-page-grid-item:hover .overlay {
+.overlay-area:hover .overlay {
   visibility: visible;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .more-work-page-grid-item:hover .overlay {
@@ -886,9 +890,9 @@ a:active {
                                                                                                
 */
 
-/*
-HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
-.project-1 {
+/* HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND  */
+
+/* .project-1-sonus {
   display: flex;
   flex-direction: column;
   background-image: url(../assets/temp/heyday.svg);
@@ -897,6 +901,11 @@ HELPFUL TIPS FROM JAMES FOR GETTING BACKGROUND
   background-position-x: -10vh;
   background-position-y: 50vh;
 } */
+
+.ornamental-sonus {
+  position: relative;
+  left: -10rem;
+}
 
 .project-1-sonus {
   background-color: #040404;
