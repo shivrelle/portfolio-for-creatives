@@ -320,10 +320,10 @@ a:active {
 }
 
 .custom-navigation:hover {
-  background: url(assets/temp/heading-background.svg);
-  background-size: 15%;
+  /* background: url(assets/temp/heading-background.svg); */
+  /* background-size: 15%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center center; */
   color: #ff057c;
 }
 
@@ -473,7 +473,10 @@ a:active {
   /* gap: 15rem; */
   align-items: flex-start;
   /* background-color: #297913; */
-  width: 100%;
+  /* width: 100%;
+  outline: 2px solid red;
+  z-index: 999;
+  position: relative; */
 }
 
 .project-branding-navigation {
@@ -745,6 +748,14 @@ a:active {
   border-radius: 0.85431rem;
   background-color: var(--overlay-color);
   transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none; /* 👈 disables blocking when invisible */
+  z-index: 1;
+}
+
+/* When the parent is hovered (or the overlay itself) */
+.parent:hover .overlay {
+  opacity: 1;
+  pointer-events: auto; /* 👈 re-enable interaction only when visible */
 }
 
 .overlay-area:hover .overlay {
