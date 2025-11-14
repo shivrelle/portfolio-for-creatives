@@ -796,6 +796,13 @@ a:active {
 .about-item-title {
   font-size: 1.35rem;
   letter-spacing: -0.05rem;
+  font-weight: 600;
+}
+
+.about-item-date {
+  font-size: 1rem;
+  /* letter-spacing: -0.05rem; */
+  font-weight: 600;
 }
 
 .about-paragraph {
@@ -810,7 +817,7 @@ a:active {
 }
 
 .currently-available {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .about-image {
@@ -916,6 +923,13 @@ a:active {
 .ornamental-sonus {
   position: relative;
   left: -10rem;
+  scale: 75%;
+}
+
+.ornamental-sonus-2 {
+  position: relative;
+  /* left: -10rem;*/
+  scale: 55%;
 }
 
 .project-1-sonus {
