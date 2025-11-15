@@ -807,6 +807,7 @@ a:active {
 
 .about-paragraph {
   font-size: 1rem;
+  max-width: 60ch;
 }
 
 .about-item-2 {
@@ -816,6 +817,25 @@ a:active {
   margin: 0rem 1rem 1rem;
 }
 
+.about-me {
+  padding-bottom: 2rem;
+}
+
+.about-me-details {
+  display: flex;
+  flex-direction: column;
+}
+
+#details.about-me {
+  display: flex;
+  flex-direction: row;
+  padding: 0rem;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+}
 .currently-available {
   font-weight: 600;
 }
@@ -823,6 +843,13 @@ a:active {
 .about-image {
   width: 75%;
   align-self: flex-start;
+}
+
+.about-divider {
+  border: none; /* Remove default border */
+  height: 0.5px; /* Set the thickness */
+  background-color: black; /* Set the color */
+  margin: 2rem 0rem; /* Add some spacing above and below */
 }
 
 .about-item-3 {
@@ -1482,8 +1509,19 @@ a:active {
   }
 
   .about-item-title {
-    font-size: 1.45rem;
+    font-size: 1rem;
     letter-spacing: -0.05rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+  }
+
+  .about-item-column {
+    min-width: 25%;
+  }
+
+  .about-item-row {
+    display: flex;
+    flex-direction: column;
   }
   .footer-item-1 {
     grid-row: 1 / 2;
@@ -1834,6 +1872,9 @@ Large devices (desktops, 992px and up) */
     grid-row: 1 / 2;
     grid-column: 2 / 2;
     padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   /* .about-paragraph {
