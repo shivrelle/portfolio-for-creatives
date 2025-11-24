@@ -470,7 +470,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   /*padding: 1rem;*/
-  /* gap: 15rem; */
+  gap: 1rem;
   align-items: flex-start;
   /* background-color: #297913; */
   /* width: 100%;
@@ -794,9 +794,10 @@ a:active {
 }
 
 .about-item-title {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   letter-spacing: -0.05rem;
   font-weight: 600;
+  padding-bottom: 0.25rem;
 }
 
 .about-item-date {
@@ -810,15 +811,15 @@ a:active {
   max-width: 60ch;
 }
 
+#mobile-awards.about-paragraph {
+  font-size: 0.9rem;
+}
+
 .about-item-2 {
   grid-column: 1 / 2;
   grid-row: 2 / 2;
   padding: 1rem;
   margin: 0rem 1rem 1rem;
-}
-
-.about-me {
-  padding-bottom: 2rem;
 }
 
 .about-me-details {
@@ -828,7 +829,7 @@ a:active {
 
 #details.about-me {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 0rem;
 }
 
@@ -1570,6 +1571,23 @@ a:active {
     grid-column: 2/2;
     text-align: center;
     align-self: start;
+  }
+
+  .about-me {
+    padding-bottom: 2rem;
+  }
+
+  #details.about-me {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem;
+  }
+
+  .about-item-title {
+    font-size: 1.35rem;
+    letter-spacing: -0.05rem;
+    font-weight: 600;
+    padding-bottom: 0.25rem;
   }
 
   /* Padding around work grid and project page */
