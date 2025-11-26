@@ -1171,32 +1171,32 @@ a:active {
   color: var(--accent-color);
 }
 
-.gallery-wrapper {
+/* .gallery-wrapper {
   margin: 0 4rem 0 4rem;
   background-color: lightcyan;
-}
+} */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 1.25rem;
-  row-gap: 5rem;
-  padding: 2rem;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  row-gap: 2rem;
+  padding: 1rem;
+  /* padding-top: 6rem;
+  padding-bottom: 6rem; */
   width: 90vw;
   justify-self: center;
-  transition: 0.3s;
-  /* margin: 0 4rem 0 4rem; */
-  background-color: mediumseagreen;
+  /* transition: 0.3s;
+  margin: 0 4rem 0 4rem;
+  background-color: mediumseagreen; */
 }
 
-&:hover .gallery__image {
+/* &:hover .gallery__image {
   filter: grayscale(1);
-}
+} */
 
 & .gallery__link {
   overflow: hidden;
-  height: 600px;
+  height: 60vh;
   /* // min-height: 50vh;
     // max-height: 100vh;
     // max-height: 400px; */
@@ -1212,14 +1212,14 @@ a:active {
   }
 }
 
-&.gallery__thumb {
+.gallery__thumb {
   position: relative;
   height: 100%;
 }
 
-&.gallery__image {
+.gallery__image {
   display: block;
-  width: 30vw;
+  width: 100vw;
   height: 100%;
   object-fit: cover;
   transition: 0.3s;
@@ -1654,7 +1654,7 @@ a:active {
     justify-content: space-between;
   }
 
-  .gallery {
+  /* .gallery {
     grid-template-columns: repeat(2, 1fr);
     width: auto;
     column-gap: 1.25rem;
@@ -1664,7 +1664,25 @@ a:active {
     padding-bottom: 6rem;
     justify-self: center;
     transition: 0.3s;
+    margin: 0 4rem 0 4rem;
+  } */
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.25rem;
+    row-gap: 5rem;
+    padding: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 90vw;
+    justify-self: center;
+    transition: 0.3s;
     /* margin: 0 4rem 0 4rem; */
+  }
+
+  .gallery-wrapper {
+    margin: 0 4rem 0 4rem;
   }
 
   & .gallery__link {
@@ -1682,6 +1700,17 @@ a:active {
       .gallery__caption {
         opacity: 1;
       }
+    }
+  }
+
+  .gallery__image {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 } /*james added this ending thingy */
@@ -2036,6 +2065,17 @@ Large devices (desktops, 992px and up) */
       .gallery__caption {
         opacity: 1;
       }
+    }
+  }
+
+  .gallery__image {
+    display: block;
+    width: 30vw;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }
