@@ -252,6 +252,14 @@ em {
   color: #271f2d;
 }
 
+#per-tutti.project-title {
+  color: #f3f2f1;
+}
+
+#twosistersfarms.project-title {
+  color: #141e29;
+}
+
 .overlay-title {
   letter-spacing: -0.075rem;
   text-transform: uppercase;
@@ -391,6 +399,10 @@ a:active {
   color: #271f2d;
 }
 
+#twosistersfarms.project-description {
+  color: #141e29;
+}
+
 .index-header {
   padding: 1rem;
 }
@@ -422,6 +434,10 @@ a:active {
 
 #seastar.custom-navigation {
   color: #271f2d;
+}
+
+#twosistersfarms.custom-navigation {
+  color: #141e29;
 }
 
 /*
@@ -720,7 +736,11 @@ a:active {
 .work-category-project {
   font-weight: 800;
   font-size: 0.9rem;
-  padding-right: 0.5rem;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 #sonus.work-category-project {
@@ -737,6 +757,10 @@ a:active {
 
 #seastar.work-category-project {
   color: #271f2d;
+}
+
+#twosistersfarms.work-category-project {
+  color: #141e29;
 }
 
 .project-category {
@@ -981,7 +1005,7 @@ a:active {
 }
 
 .project-1-per-tutti {
-  background-color: #26414c;
+  background-color: #261f19;
 }
 .index-wrapper {
   display: flex;
@@ -1007,6 +1031,10 @@ a:active {
 
 #seastar.project-wrapper {
   background-color: white;
+}
+
+#twosistersfarms.project-wrapper {
+  background-color: #cee9f1;
 }
 
 /* Sidebar */
@@ -1069,13 +1097,26 @@ a:active {
 
 .per-tutti-project-image {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .image-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  max-width: 100%;
 }
+
+#twosistersfarms.image-row img {
+  width: 100%;
+  height: auto;
+}
+
+#twosistersfarms.image-row {
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
 .more-projects-img {
   border-radius: 0.85431rem;
 }
@@ -1271,6 +1312,47 @@ a:active {
   transition: 0.3s;
 }
 
+.pagination-box {
+  justify-self: center;
+  padding-right: 6rem;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-self: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1rem;
+  height: 15vh;
+  align-items: center;
+  width: 30%;
+}
+
+.pagination li a {
+  display: block;
+  padding: 8px 12px;
+  margin: 0.5rem;
+  border-radius: 70px;
+  text-decoration: none;
+  color: black;
+  border: 0.5px solid grey;
+  /* margin: 0 4px; */
+  font-weight: 600;
+  font-family: "Fraunces";
+  font-size: 1rem;
+}
+
+.pagination li a.active {
+  background-color: #171717;
+  color: white;
+  font-weight: 200;
+}
+
+.pagination li a:hover:not(.active) {
+  background-color: orange;
+}
+
 /*
 
 ███████ ██   ██ ███████ ████████  ██████ ██   ██ ██████   ██████   ██████  ██   ██ 
@@ -1419,6 +1501,22 @@ a:active {
 
   #per-tutti.project-title {
     color: #f2f2f1;
+  }
+
+  .per-tutti-project-image {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image-row {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  #twosistersfarms.image-row img {
+    width: 50%;
+    height: auto;
   }
 
   .project-description {
@@ -1703,7 +1801,7 @@ a:active {
     row-gap: 5rem;
     padding: 2rem;
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    /* padding-bottom: 6rem; */
     width: 90vw;
     justify-self: center;
     transition: 0.3s;
@@ -2243,7 +2341,7 @@ X-Large devices (large desktops, 1200px and up)*/
     line-height: normal;
   }
 
-  .hero-divider: {
+  .hero-divider {
     margin: 2rem;
   }
 
