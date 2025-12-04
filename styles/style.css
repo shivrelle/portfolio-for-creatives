@@ -743,6 +743,10 @@ a:active {
   text-align: center;
 }
 
+#play-page.work-category-project {
+  padding-left: 0rem;
+}
+
 #sonus.work-category-project {
   color: #f3f2f2;
 }
@@ -1768,6 +1772,16 @@ a:active {
     object-fit: cover; /* or contain if you want full image visible */
   }
 
+  #emma.project-image {
+    display: flex;
+  }
+
+  #emma.project-image img {
+    height: 100%;
+    width: auto;
+    object-fit: cover; /* or contain if you want full image visible */
+  }
+
   .custom-navigation {
     font-size: 1rem;
   }
@@ -1810,7 +1824,7 @@ a:active {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 1.25rem;
-    row-gap: 5rem;
+    row-gap: 1rem;
     padding: 2rem;
     padding-top: 6rem;
     /* padding-bottom: 6rem; */
@@ -2380,12 +2394,12 @@ X-Large devices (large desktops, 1200px and up)*/
   }
 
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   & .gallery__link {
     overflow: hidden;
-    height: 600px;
+    height: 400px;
     /* // min-height: 50vh;
       // max-height: 100vh;
       // max-height: 400px; */
