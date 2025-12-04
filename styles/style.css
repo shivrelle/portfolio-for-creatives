@@ -1756,6 +1756,18 @@ a:active {
   .project-image {
     margin-bottom: 0.75rem;
   }
+
+  #all-aboard.project-image {
+    height: 100%;
+    display: flex;
+  }
+
+  #all-aboard.project-image img {
+    height: 100%;
+    width: auto;
+    object-fit: cover; /* or contain if you want full image visible */
+  }
+
   .custom-navigation {
     font-size: 1rem;
   }
