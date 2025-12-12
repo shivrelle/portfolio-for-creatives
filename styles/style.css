@@ -161,24 +161,23 @@ svg {
 
 h1 {
   font-family: var(--heading-typeface);
-  font-size: 3.125rem;
+  font-size: 1.5625rem;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.25rem;
-  text-transform: uppercase;
-  color: var(--h1-color);
+  font-weight: 600;
+  line-height: 115%; /* 1.79688rem */
+  letter-spacing: -0.09375rem;
+  color: var(--h4-color);
 }
 
 h2 {
-  font-family: var(--heading-typeface);
-  font-size: 1.5625rem;
+  font-family: var(--body-typeface);
+  font-size: 0.875rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
   line-height: normal;
-  letter-spacing: -0.125rem;
   text-transform: uppercase;
-  color: var(--h2-color);
+  color: var(--h6-color);
 }
 
 h3 {
@@ -193,19 +192,20 @@ h3 {
 
 h4 {
   font-family: var(--heading-typeface);
-  font-size: 1.5625rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 115%; /* 1.79688rem */
-  letter-spacing: -0.09375rem;
-  color: var(--h4-color);
+  line-height: normal;
+  letter-spacing: -0.02rem;
+  text-transform: uppercase;
+  color: var(--h1-color);
 }
 
 h5 {
   font-family: var(--body-typeface);
   font-size: 1.125rem;
   font-style: normal;
-  font-weight: 275;
+  font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
   color: var(--h5-color);
@@ -250,23 +250,23 @@ em {
   margin-bottom: 1rem;
 }
 
-#sonus.project-title {
+.sonus.project-title {
   color: #f3f2f2;
 }
 
-#wellfare.project-title {
+.wellfare.project-title {
   color: #caff59;
 }
 
-#seastar.project-title {
+.seastar.project-title {
   color: #271f2d;
 }
 
-#per-tutti.project-title {
+.per-tutti.project-title {
   color: #f3f2f1;
 }
 
-#twosistersfarms.project-title {
+.twosistersfarms.project-title {
   color: #141e29;
 }
 
@@ -286,7 +286,7 @@ em {
   font-family: var(--heading-typeface);
   font-size: 2rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 100%;
   letter-spacing: -0.1rem;
   text-transform: uppercase;
@@ -393,23 +393,23 @@ a:active {
   margin-bottom: 2rem;
 }
 
-#sonus.project-description {
+.sonus.project-description {
   color: #f3f2f2;
 }
 
-#wellfare.project-description {
+.wellfare.project-description {
   color: #f3f2f2;
 }
 
-#per-tutti.project-description {
+.per-tutti.project-description {
   color: #f3f2f1;
 }
 
-#seastar.project-description {
+.seastar.project-description {
   color: #271f2d;
 }
 
-#twosistersfarms.project-description {
+.twosistersfarms.project-description {
   color: #141e29;
 }
 
@@ -435,28 +435,36 @@ a:active {
   text-transform: uppercase;
 }
 
-#sonus.custom-navigation:visited {
+.sonus.custom-navigation:visited {
   color: #f3f2f2;
 }
 
-#per-tutti.custom-navigation:visited {
+.per-tutti.custom-navigation:visited {
   color: #f2f2f1;
 }
 
-#per-tutti.custom-navigation {
+.per-tutti.custom-navigation {
   color: #f3f2f1;
 }
 
-#wellfare.custom-navigation {
+.wellfare.custom-navigation {
   color: #caff59;
 }
 
-#seastar.custom-navigation {
+.seastar.custom-navigation {
   color: #271f2d;
 }
 
-#twosistersfarms.custom-navigation {
+.twosistersfarms.custom-navigation {
   color: #141e29;
+}
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /*
@@ -930,29 +938,31 @@ a:active {
   display: flex;
   align-items: center;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: normal;
 }
 
-#play-page.work-category-project {
+.play-page.work-category-project {
   padding-left: 0rem;
 }
 
-#sonus.work-category-project {
+.sonus.work-category-project {
   color: #f3f2f2;
 }
 
-#per-tutti.work-category-project {
+.per-tutti.work-category-project {
   color: #f3f2f1;
 }
 
-#wellfare.work-category-project {
+.wellfare.work-category-project {
   color: #f3f2f2;
 }
 
-#seastar.work-category-project {
+.seastar.work-category-project {
   color: #271f2d;
 }
 
-#twosistersfarms.work-category-project {
+.twosistersfarms.work-category-project {
   color: #141e29;
 }
 
@@ -1235,15 +1245,15 @@ a:active {
   flex-direction: column;
 }
 
-#wellfare.project-wrapper {
+.wellfare.project-wrapper {
   background-color: #040404;
 }
 
-#seastar.project-wrapper {
+.seastar.project-wrapper {
   background-color: white;
 }
 
-#twosistersfarms.project-wrapper {
+.twosistersfarms.project-wrapper {
   background-color: #cee9f1;
 }
 
@@ -1316,12 +1326,12 @@ a:active {
   max-width: 100%;
 }
 
-#twosistersfarms.image-row img {
+.twosistersfarms.image-row img {
   width: 100%;
   height: auto;
 }
 
-#twosistersfarms.image-row {
+.twosistersfarms.image-row {
   display: flex;
   max-width: 100%;
   margin-bottom: 1rem;
@@ -1613,12 +1623,14 @@ a:active {
 
   h1 {
     font-size: 2.75rem;
-    font-weight: 800;
+    font-weight: 400;
+    letter-spacing: -0.05rem;
   }
 
   h2 {
     font-size: 1.5rem;
     font-weight: 400;
+    letter-spacing: 0rem;
   }
 
   h3 {
@@ -1894,15 +1906,15 @@ a:active {
     color: #f3f2f2;
   }
 
-  #wellfare.project-title {
+  .wellfare.project-title {
     color: #caff59;
   }
 
-  #seastar.project-title {
+  .seastar.project-title {
     color: #271f2d;
   }
 
-  #per-tutti.project-title {
+  .per-tutti.project-title {
     color: #f2f2f1;
   }
 
@@ -1917,7 +1929,7 @@ a:active {
     max-width: 100%;
   }
 
-  #twosistersfarms.image-row img {
+  .twosistersfarms.image-row img {
     width: 50%;
     height: auto;
   }
@@ -1942,6 +1954,7 @@ a:active {
     font-weight: 800;
     font-size: 0.9rem;
     padding-right: 1.5rem;
+    text-transform: uppercase;
   }
 
   .work-header {
@@ -2160,22 +2173,22 @@ a:active {
     margin-bottom: 0.75rem;
   }
 
-  #all-aboard.project-image {
+  .all-aboard.project-image {
     height: 100%;
     display: flex;
   }
 
-  #all-aboard.project-image img {
+  .all-aboard.project-image img {
     height: 100%;
     width: auto;
     object-fit: cover; /* or contain if you want full image visible */
   }
 
-  #emma.project-image {
+  .emma.project-image {
     display: flex;
   }
 
-  #emma.project-image img {
+  .emma.project-image img {
     height: 100%;
     width: auto;
     object-fit: cover; /* or contain if you want full image visible */
@@ -2298,7 +2311,7 @@ Large devices (desktops, 992px and up) */
   h2 {
     font-size: 1rem;
     font-weight: 400;
-    letter-spacing: -0.05rem;
+    letter-spacing: 0rem;
   }
 
   h3 {
@@ -2563,9 +2576,9 @@ Large devices (desktops, 992px and up) */
     width: 100%;
   }
 
-  .work-category-project {
+  /* .work-category-project {
     font-size: 0.7rem;
-  }
+  } */
 
   .grid-more-work {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
