@@ -2116,9 +2116,9 @@ a:active {
     align-self: start;
   }
 
-  .about-me {
+  /* .about-me {
     padding-bottom: 2rem;
-  }
+  } */
 
   #details.about-me {
     display: flex;
