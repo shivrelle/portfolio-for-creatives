@@ -215,7 +215,7 @@ h6 {
   font-family: var(--body-typeface);
   font-size: 0.875rem;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
   color: var(--h6-color);
@@ -503,7 +503,9 @@ a:active {
 
 .Iam {
   visibility: hidden; /*   padding: 1rem 1rem; */
-  font: normal 5rem Fraunces, serif;
+  font:
+    normal 5rem Fraunces,
+    serif;
   color: #131313;
   /*   text-transform: uppercase; */
   letter-spacing: -0.2rem;
@@ -902,8 +904,8 @@ a:active {
 }
 
 .work-page-dot {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.2rem;
+  /* height: 0.5rem; */
 }
 
 .more-work-page-grid-item {
@@ -990,7 +992,9 @@ a:active {
   padding: 1em;
   border-radius: 0.85431rem;
   background-color: var(--overlay-color);
-  transition: opacity 0.3s, visibility 0.3s;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
   pointer-events: none; /* 👈 disables blocking when invisible */
   z-index: 1;
 }
@@ -1714,7 +1718,9 @@ a:active {
   .Iam {
     /*   padding: 1rem 1rem; */
     visibility: visible;
-    font: normal 3rem Fraunces, serif;
+    font:
+      normal 3rem Fraunces,
+      serif;
     color: #131313;
     /*   text-transform: uppercase; */
     letter-spacing: -0.2rem;
@@ -2391,7 +2397,9 @@ Large devices (desktops, 992px and up) */
   .Iam {
     /*   padding: 1rem 1rem; */
     visibility: visible;
-    font: normal 3rem Fraunces, serif;
+    font:
+      normal 3rem Fraunces,
+      serif;
     color: #131313;
     /*   text-transform: uppercase; */
     letter-spacing: -0.2rem;
@@ -2874,7 +2882,9 @@ X-Large devices (large desktops, 1200px and up)*/
   .Iam {
     /*   padding: 1rem 1rem; */
     visibility: visible;
-    font: normal 5rem Fraunces, serif;
+    font:
+      normal 5rem Fraunces,
+      serif;
     color: #131313;
     /*   text-transform: uppercase; */
     letter-spacing: -0.2rem;
