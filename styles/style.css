@@ -1062,6 +1062,15 @@ a:active {
   padding-bottom: 0.25rem;
 }
 
+.about-item-pull-quote {
+  font-size: 1.4rem;
+  letter-spacing: -0.05rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  padding-bottom: 1rem;
+  max-width: 24ch;
+}
+
 .about-item-date {
   font-size: 1rem;
   /* letter-spacing: -0.05rem; */
@@ -2094,6 +2103,13 @@ a:active {
     padding-bottom: 1rem;
   }
 
+  .about-item-pull-quote {
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+  }
+
   .about-item-column {
     min-width: 25%;
   }
@@ -2171,6 +2187,15 @@ a:active {
     letter-spacing: -0.05rem;
     font-weight: 600;
     padding-bottom: 0.25rem;
+  }
+
+  .about-item-pull-quote {
+    font-size: 1.4rem;
+    letter-spacing: -0.05rem;
+    font-weight: 300;
+    padding-bottom: 1.3rem;
+    max-width: 40ch;
+    line-height: 1.6rem;
   }
 
   /* Padding around work grid and project page */
@@ -2707,6 +2732,16 @@ Large devices (desktops, 992px and up) */
     /* height: 45vh; */
     padding-left: 2rem;
   }
+
+  .about-item-pull-quote {
+    font-size: 1.7rem;
+    letter-spacing: -0.05rem;
+    font-weight: 300;
+    padding-bottom: 1.3rem;
+    max-width: 40ch;
+    line-height: 2rem;
+  }
+
   .about-item-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -2848,7 +2883,7 @@ Large devices (desktops, 992px and up) */
   }
 
   .branding-navigation {
-    width: 40%;
+    width: 25%;
   }
   .arrow {
     padding-right: 1rem;
@@ -2917,6 +2952,11 @@ X-Large devices (large desktops, 1200px and up)*/
 
   .about-item-1 {
     justify-content: flex-start;
+  }
+
+  .about-item-pull-quote {
+    max-width: 28ch;
+    font-weight: 400;
   }
 
   /* .grid-more-work {
@@ -3219,6 +3259,14 @@ X-Large devices (large desktops, 1200px and up)*/
 
   .global-footer {
     min-height: 20vh;
+  }
+
+  .about-item-pull-quote {
+    max-width: 34ch;
+  }
+
+  .about-paragraph {
+    max-width: 74ch;
   }
 
   .grid {
