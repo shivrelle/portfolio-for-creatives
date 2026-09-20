@@ -510,6 +510,7 @@ a:active {
   /*   text-transform: uppercase; */
   letter-spacing: -0.2rem;
   font-weight: 400;
+  display: none;
 }
 
 .Iam p {
@@ -753,32 +754,25 @@ a:active {
 }
 
 .hero-headline-wrapper {
-  /*display: flex;
-  flex-direction: row;
-  width: 100%;*/
-  height: 55vh;
-  /* background: url(../assets/index/Hero_Coming_Soon.png); */
+  /* min-height: 55vh; was: height: 55vh */
   background-size: cover;
-  /* background-color: mistyrose; */
-  /* background-repeat: no-repeat;
-  background-position: center center; */
 }
 
 .hero-content {
-  /* background-color: #ffc35590; */
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   justify-items: center;
-  width: 100vw;
-  height: inherit;
-  padding-left: 1.75rem;
+  width: 100%; /* was: 100vw — this can also cause horizontal overflow/scrollbar */
+  min-height: inherit; /* was: height: inherit */
+  /* padding-left: 1.75rem; */
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
 .hero-tagline {
@@ -796,26 +790,24 @@ a:active {
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.4;
   text-align: left;
   /* background-color: aliceblue; */
 }
-
 .hero-image {
   position: relative;
-  /* padding-bottom: 56.25%;
-  padding-top: 35px; */
-  height: 100%;
+  width: 100%;
   overflow: hidden;
-  /* background-color: rgba(0, 0, 255, 0.435); */
+  margin: 0 auto;
+  /* pick ONE of the two approaches below */
 }
 
-.hereo-image iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero-image video {
   width: 100%;
   height: 100%;
+  object-fit: cover; /* fills the box, crops overflow, no distortion */
+  object-position: center;
+  display: block;
 }
 
 .hero-icon {
@@ -842,9 +834,9 @@ a:active {
   /* Add some spacing above and below */
 }
 
-.footer-divider {
+/* .footer-divider {
   margin-top: 5rem;
-}
+} */
 
 .footer-title {
   text-transform: none;
@@ -1624,6 +1616,44 @@ a:active {
   background-color: orange;
 }
 
+/*                                                                                                                   
+                                                                                                                  
+MMMMMMMM               MMMMMMMM                          tttt            iiii                                     
+M:::::::M             M:::::::M                       ttt:::t           i::::i                                    
+M::::::::M           M::::::::M                       t:::::t            iiii                                     
+M:::::::::M         M:::::::::M                       t:::::t                                                     
+M::::::::::M       M::::::::::M   ooooooooooo   ttttttt:::::ttttttt    iiiiiii    ooooooooooo   nnnn  nnnnnnnn    
+M:::::::::::M     M:::::::::::M oo:::::::::::oo t:::::::::::::::::t    i:::::i  oo:::::::::::oo n:::nn::::::::nn  
+M:::::::M::::M   M::::M:::::::Mo:::::::::::::::ot:::::::::::::::::t     i::::i o:::::::::::::::on::::::::::::::nn 
+M::::::M M::::M M::::M M::::::Mo:::::ooooo:::::otttttt:::::::tttttt     i::::i o:::::ooooo:::::onn:::::::::::::::n
+M::::::M  M::::M::::M  M::::::Mo::::o     o::::o      t:::::t           i::::i o::::o     o::::o  n:::::nnnn:::::n
+M::::::M   M:::::::M   M::::::Mo::::o     o::::o      t:::::t           i::::i o::::o     o::::o  n::::n    n::::n
+M::::::M    M:::::M    M::::::Mo::::o     o::::o      t:::::t           i::::i o::::o     o::::o  n::::n    n::::n
+M::::::M     MMMMM     M::::::Mo::::o     o::::o      t:::::t    tttttt i::::i o::::o     o::::o  n::::n    n::::n
+M::::::M               M::::::Mo:::::ooooo:::::o      t::::::tttt:::::ti::::::io:::::ooooo:::::o  n::::n    n::::n
+M::::::M               M::::::Mo:::::::::::::::o      tt::::::::::::::ti::::::io:::::::::::::::o  n::::n    n::::n
+M::::::M               M::::::M oo:::::::::::oo         tt:::::::::::tti::::::i oo:::::::::::oo   n::::n    n::::n
+MMMMMMMM               MMMMMMMM   ooooooooooo             ttttttttttt  iiiiiiii   ooooooooooo     nnnnnn    nnnnnn
+                                                                                                                  
+ */
+
+.motion-image {
+  position: relative;
+  width: 75%;
+  align-self: center; /* centers it within the flex-column .hero-content */
+  aspect-ratio: 16 / 9; /* matches your video's actual ratio */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.motion-image iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /*
 
 ███████ ██   ██ ███████ ████████  ██████ ██   ██ ██████   ██████   ██████  ██   ██ 
@@ -1717,14 +1747,14 @@ a:active {
     font-style: normal;
     font-weight: 400;
     line-height: 1;
-    text-align: right;
+    text-align: left;
     padding-bottom: 1.5rem;
     /* background-color: aliceblue; */
   }
 
   .hero-header {
     /*margin-bottom: 2rem;*/
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     /*display: flex;
     flex-direction: column;*/
     background: #f3f2f2;
@@ -1739,12 +1769,12 @@ a:active {
   } */
 
   .hero-gradient-animation {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 
-  .hero-headline-wrapper {
+  /* .hero-headline-wrapper {
     height: 60vh;
-  }
+  } */
 
   .error-headline-wrapper {
     height: 60vh;
@@ -1758,8 +1788,8 @@ a:active {
     justify-content: flex-end;
     justify-items: center;
     width: 100vw;
-    height: inherit;
-    padding: 2rem 2rem 0rem;
+    /* height: inherit;
+    padding: 2rem 2rem 0rem; */
   }
 
   .Iam {
@@ -1932,7 +1962,7 @@ a:active {
 } */
 
   .hero-text {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -2431,7 +2461,7 @@ Large devices (desktops, 992px and up) */
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 40vh;
+    min-height: 40vh;
   }
 
   .error-headline-wrapper {
@@ -2957,6 +2987,9 @@ X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   /* TODO: Add styles here for X-large devices. */
 
+  .hero-image {
+    width: 80%;
+  }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(26.75rem, 1fr));
   }
@@ -3251,9 +3284,10 @@ X-Large devices (large desktops, 1200px and up)*/
   .hero-description {
     font-size: 3rem;
     font-style: normal;
-    font-weight: 400;
-    line-height: 2.5rem;
+    font-weight: 500;
+    line-height: 3.25rem;
     padding-bottom: 1rem;
+    letter-spacing: -0.15rem;
   }
 
   .hero-headline-wrapper {
@@ -3272,8 +3306,8 @@ X-Large devices (large desktops, 1200px and up)*/
     width: 40%;
   }
   .index-title {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 2.75 rem;
+    font-weight: 600;
   }
 
   .global-footer {
@@ -3286,6 +3320,10 @@ X-Large devices (large desktops, 1200px and up)*/
 
   .about-paragraph {
     max-width: 74ch;
+  }
+
+  .work-title {
+    font-size: 2rem;
   }
 
   .grid {
